@@ -28,8 +28,11 @@ function success(pos) {
 		var tempC = response.main.temp;
 		//temperature in Fahrenheit
 		var tempF = tempC * 9/5 + 32;
-
-    var landscape = response.weather[0].description.split(' ').join('-');
+		//Variable to determine the landscape background of the page.
+		var landscape = response.weather[0].description.split(' ').join('-');
+		var date = new Date(response.dt * 1000).getHours();
+		console.log("The time is: "+date);
+	
 		console.log("La temperatura en Celcius es: " + tempC);
 		console.log("La temperatura en Fahrenheit es: "	+ tempF);
 		$('.climate').text('The temperature in Celcius is: '+tempC);
