@@ -84,7 +84,8 @@
 }
 
 .mist{
-  background-image: url('img/mist.jpg');
+  background-image: url('img/
+    mist.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -93,4 +94,4 @@
 }
 
 
-#contenedor{width: 50%; margin: 0 auto;}
+#weather-tool{width: 50%; margin: 0 auto;}

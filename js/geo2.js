@@ -1,3 +1,4 @@
+function weather(){
 //options parameter for navigator
 var options = {
   enableHighAccuracy: true,
@@ -27,11 +28,14 @@ function success(pos) {
 		var tempC = response.main.temp;
 		//temperature in Fahrenheit
 		var tempF = tempC * 9/5 + 32;
+
+    var landscape = response.weather[0].description.split(' ').join('-');
 		console.log("La temperatura en Celcius es: " + tempC);
 		console.log("La temperatura en Fahrenheit es: "	+ tempF);
-		b(tempc);
+		$('.climate').text('The temperature in Celcius is: '+tempC);
+    $('body').addClass(landscape);
      });
-  var function b()
+
 }
 //Function error for the navigator parameter error 
 function error(err) {
@@ -41,4 +45,8 @@ function error(err) {
 
 //navigator
 navigator.geolocation.getCurrentPosition(success, error, options);
+
+}
+
+weather();
 
