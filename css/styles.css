@@ -1,6 +1,6 @@
-.clear-sky{
+.clear-sky-day{
 
-  background-image: url('img/clear-sky.jpg');
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/12017583_1024112500974474_370167076934926588_o.jpg');
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -20,8 +20,31 @@
   background-color: #464646;
 }
 
-.few-clouds{
-  background-image: url('img/few-clouds.jpg');
+.clear-sky-night{
+
+  background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xta1/t31.0-8/12029615_1024112644307793_3155920974076445175_o.jpg');
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+
+.few-clouds-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12045262_1024112620974462_7780137058876176689_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -29,8 +52,8 @@
   background-color: #464646;
 }
 
-.scattered-clouds{
-  background-image: url('img/scattered-clouds.jpg');
+.few-clouds-night{
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/12030501_1024112594307798_2741489422879541461_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,8 +61,9 @@
   background-color: #464646;
 }
 
-.broken-clouds{
-  background-image: url('img/-clouds.jpg');
+
+.broken-clouds-day{
+  background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/12017622_1024112550974469_8238293931245298926_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,8 +71,47 @@
   background-color: #464646;
 }
 
-.shower-rain{
-  background-image: url('img/shower-rain.jpg');
+.broken-clouds-night{
+  background-image: url('https://www.facebook.com/photo.php?fbid=1024112497641141&set=a.1024112464307811.1073741827.100001272006882&type=3&theater');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+.scattered-clouds-day{
+  background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/11055348_1024112814307776_861897052465762353_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.scattered-clouds-night{
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/12030561_1024112820974442_8549428048643064566_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+
+.shower-rain-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/12068839_1024112884307769_1983176721771422847_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.shower-rain-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xlt1/t31.0-8/11953374_1024112890974435_7284209397404960800_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -57,7 +120,7 @@
 }
 
 .rain{
-  background-image: url('img/rain.jpg');
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12032700_1024112770974447_1556518810731959202_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -65,8 +128,8 @@
   background-color: #464646;
 }
 
-.thunderstorm{
-  background-image: url('img/thunderstorm.jpg');
+.thunderstorm-day{
+  background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/12015149_1024113004307757_1250751231255888578_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,18 +137,8 @@
   background-color: #464646;
 }
 
-.snow{
-  background-image: url('img/snow.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-
-.mist{
-  background-image: url('img/
-    mist.jpg');
+.thunderstorm-night{
+  background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/11056548_1024113040974420_5449074249496734420_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -94,4 +147,60 @@
 }
 
 
-#weather-tool{width: 50%; margin: 0 auto;}
+.snow-day{
+  background-image: url('https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xtf1/t31.0-8/12031468_1024112887641102_7656737126397800322_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.snow-night{
+  background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/12034479_1024113007641090_3284469394951168999_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.mist-day{
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/11930925_1024112627641128_1456570297205053363_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+.mist-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12010738_1024112664307791_4610422286622633287_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.overcast-clouds-day{
+  background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xta1/t31.0-8/12039047_1024112694307788_4251087357662709806_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.overcast-clouds-night{
+  background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xtp1/t31.0-8/12029549_1024112764307781_2272966183741172713_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+.center-this{width: 50%; margin: 0 auto;}
