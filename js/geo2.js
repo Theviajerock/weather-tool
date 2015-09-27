@@ -31,12 +31,18 @@ function success(pos) {
 		//Variable to determine the landscape background of the page.
 		var landscape = response.weather[0].description.split(' ').join('-');
 		var date = new Date(response.dt * 1000).getHours();
+
+    if (date < 18 && date >6){
+
+      var timeLight = 'day'
+    }
+    else{var timeLight = 'night'}
 		console.log("The time is: "+date);
 	
 		console.log("La temperatura en Celcius es: " + tempC);
 		console.log("La temperatura en Fahrenheit es: "	+ tempF);
 		$('.climate').text('The temperature in Celcius is: '+tempC);
-    $('body').addClass(landscape);
+    $('body').addClass(landscape+'-'+timeLight);
      });
 
 }
