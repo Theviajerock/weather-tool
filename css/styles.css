@@ -1,4 +1,4 @@
-.clear-sky-day{
+.clear-sky-day, .calm-day{
 
   background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/12017583_1024112500974474_370167076934926588_o.jpg');
   /* Background image is centered vertically and horizontally at all times */
@@ -20,7 +20,7 @@
   background-color: #464646;
 }
 
-.clear-sky-night{
+.clear-sky-night, .calm-night{
 
   background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xta1/t31.0-8/12029615_1024112644307793_3155920974076445175_o.jpg');
   /* Background image is centered vertically and horizontally at all times */
@@ -84,7 +84,7 @@
 }
 
 
-.few-clouds-day{
+.few-clouds-day, .hot-day{
   background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12045262_1024112620974462_7780137058876176689_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   background-color: #464646;
 }
 
-.few-clouds-night{
+.few-clouds-night, .hot-night{
   background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/12030501_1024112594307798_2741489422879541461_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@
   background-color: #464646;
 }
 
-.thunderstorm-day{
+.thunderstorm-day, .storm-day, .violent-storm-day, .thunderstorm-with-light-rain-day, .thunderstorm-with-rain-day, .thunderstorm-with-heavy-rain-day, .light-thunderstorm-day, .heavy-thunderstorm-day, .ragged-thunderstorm-day, .thunderstorm-with-light-drizzle-day, .thunderstorm-with-drizzle-day, .thunderstorm-with-heavy-drizzle-day    {
   background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/12015149_1024113004307757_1250751231255888578_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@
   background-color: #464646;
 }
 
-.thunderstorm-night{
+.thunderstorm-night, .storm-night, .violent-storm-night, .thunderstorm-with-light-rain-night, .thunderstorm-with-rain-night, .light-thunderstorm-night, .heavy-thunderstorm-night, .ragged-thunderstorm-night, .thunderstorm-with-light-drizzle-night, .thunderstorm-with-drizzle-night, .thunderstorm-with-heavy-drizzle-night{
   background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/11056548_1024113040974420_5449074249496734420_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@
 }
 
 
-.snow-day{
+.snow-day, .cold-day{
   background-image: url('https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xtf1/t31.0-8/12031468_1024112887641102_7656737126397800322_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@
   background-color: #464646;
 }
 
-.snow-night{
+.snow-night, .cold-night{
   background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/12034479_1024113007641090_3284469394951168999_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@
   background-color: #464646;
 }
 
-.mist-day{
+.mist-day, .fog-day, .smoke-day{
   background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/11930925_1024112627641128_1456570297205053363_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@
 }
 
 
-.mist-night{
+.mist-night, .fog-night, .smoke-night{
   background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12010738_1024112664307791_4610422286622633287_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -242,6 +242,125 @@
   background-size: cover;
   background-color: #464646;
 }
+
+.sand-day, .dust-day{
+  background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xtp1/t31.0-8/12029549_1024112764307781_2272966183741172713_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.sand-night, .dust-night{
+  background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xtp1/t31.0-8/12029549_1024112764307781_2272966183741172713_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.volcanic-ash-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/12068434_1024437787608612_3509212735683917610_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.volcanic-ash-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/11207360_1024437557608635_1118369068242228965_n.jpg?oh=e2b23e92bed05ab5cf6c266cb34d3966&oe=5660ABDE');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.squalls-day, .squalls-night{
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/12022567_1024441830941541_3596289944911657550_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.tornado-day, .tropical-storm-day, .hurricane-day {
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12068508_1024443450941379_3594221724598701438_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.tornado-night, .tropical-storm-night, .hurricane-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12027161_1024443484274709_5825891350889520510_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.windy-day, .light-breeze-day, .gentle-breeze-day, .moderate-breeze-day, .fresh-breeze-day, .strong-breeze-day, .severe-gale-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/12045581_1024447090941015_6561888747550360990_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.windy-night, .light-breeze-night, .gentle-breeze-night, .moderate-breeze-night, .fres-breeze-night, .strong-breeze-night, .severe-gale-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/12002471_1024447544274303_4506373703814648907_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.hail-night{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/11947785_1024448610940863_3102213338217047400_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.hail-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xft1/t31.0-8/11103076_1024448334274224_8033006783773785211_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.drizzle-day, .light-intensity-drizzle-day, .heavy-intensity-drizzle-day, .light-intensity-drizzle-rain-day, .drizzle-rain-day, .heavy-intensity-drizzle-rain-day, .shower-rain-and-drizzle-day, .heavy-shower-rain-and-drizzle-day, .shower-drizzle-day {
+  background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpt1/t31.0-8/11230139_1024464424272615_4514219611091075267_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.drizzle-night, .light-intensity-drizzle-night, .heavy-intensity-drizzle-night, .light-intensity-drizzle-rain-night, .drizzle-rain-night, .heavy-intensity-drizzle-rain-night, .shower-rain-and-drizzle-night, .heavy-shower-rain-and-drizzle-night, .shower-drizzle-night {
+  background-image: url('https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xlp1/t31.0-8/12028661_1024464374272620_7462319980061002379_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
 
 .center-this{width: 50%; margin: 0 auto;}
 body{

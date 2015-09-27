@@ -35,7 +35,10 @@ function success(pos) {
 		tempC = response.main.temp;
 		//temperature in Fahrenheit
 		tempF = tempC * 9/5 + 32;
-		//Variable to determine the landscape background of the page.
+	
+
+
+    //Variable to determine the landscape background of the page.
     var climateDescription = response.weather[0].description;
     var landscape = response.weather[0].description.split(' ').join('-');
     var climateResume = response.weather[0].main;
@@ -44,11 +47,20 @@ function success(pos) {
     var dateComplete = date+':'+dateMinutes;
     var yourLocation = response.name;
 
+    $('#icon').prepend('<img src="http://openweathermap.org/img/w/'+iconWeather+'.png">');
+             
+   
+  
+
     if (date < 18 && date >6){
 
       var timeLight = 'day'
     }
     else{var timeLight = 'night'}
+
+
+  
+
 		console.log("The time is: "+date);
 	
 		console.log("La temperatura en Celcius es: " + tempC);
@@ -59,9 +71,7 @@ function success(pos) {
     $('.climDescription').text(climateDescription);
     $('.yourLocation').text(yourLocation);
     $('body').addClass(landscape+'-'+timeLight);
-    $('#icon').prepend('<img src="http://theviajerock.tk/img/'+landscape+'-'+timeLight+'-icon.png">');
                         
-    console.log('<img src="http://theviajerock.tk/img/'+landscape+'-'+timeLight+'-icon.png"')
     
      });
 
