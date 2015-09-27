@@ -160,7 +160,7 @@
   background-color: #464646;
 }
 
-.rain{
+.rain, .light-rain-day, .light-rain-night{
   background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/12032700_1024112770974447_1556518810731959202_o.jpg');
   background-position: center center;
   background-repeat: no-repeat;
