@@ -29,8 +29,13 @@ function success(pos) {
 		//temperature in Fahrenheit
 		var tempF = tempC * 9/5 + 32;
 		//Variable to determine the landscape background of the page.
-		var landscape = response.weather[0].description.split(' ').join('-');
+    var climateDescription = response.weather[0].description;
+    var landscape = response.weather[0].description.split(' ').join('-');
+    var climateResume = response.weather[0].main;
 		var date = new Date(response.dt * 1000).getHours();
+    var dateMinutes = new Date(response.dt * 1000).getMinutes();
+    var dateComplete = date+':'+dateMinutes;
+    var yourLocation = response.name;
 
     if (date < 18 && date >6){
 
@@ -41,9 +46,18 @@ function success(pos) {
 	
 		console.log("La temperatura en Celcius es: " + tempC);
 		console.log("La temperatura en Fahrenheit es: "	+ tempF);
-		$('.climate').text('The temperature in Celcius is: '+tempC);
+		$('.climate').text(tempC);
+    $('.yourTime').text(dateComplete);
+    $('.climResume').text(climateResume);
+    $('.climDescription').text(climateDescription);
+    $('.yourLocation').text(yourLocation);
     $('body').addClass(landscape+'-'+timeLight);
+    $('#icon').prepend('<img src="http://theviajerock.tk/img/broken-clouds-night-icon.png">');
+    console.log('<img src="http://theviajerock.tk/img/'+landscape+'-'+timeLight+'-icon.png"')
+    
      });
+
+
 
 }
 //Function error for the navigator parameter error 
