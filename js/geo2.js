@@ -1,3 +1,10 @@
+$(document).ready(function(){  
+
+var lat;
+var lon;
+var tempC;
+var tempF;
+
 function weather(){
 //options parameter for navigator
 var options = {
@@ -8,8 +15,8 @@ var options = {
 //Function for the navigator parameter success
 function success(pos) {
   var crd = pos.coords;
-  var lat = crd.latitude;
-  var lon = crd.longitude;
+  lat = crd.latitude;
+  lon = crd.longitude;
   var acc = crd.accuracy;
   
   console.log("La latitud es: "+lat);
@@ -25,9 +32,9 @@ function success(pos) {
 
         }
 		//temperature in Celcius
-		var tempC = response.main.temp;
+		tempC = response.main.temp;
 		//temperature in Fahrenheit
-		var tempF = tempC * 9/5 + 32;
+		tempF = tempC * 9/5 + 32;
 		//Variable to determine the landscape background of the page.
     var climateDescription = response.weather[0].description;
     var landscape = response.weather[0].description.split(' ').join('-');
@@ -46,13 +53,14 @@ function success(pos) {
 	
 		console.log("La temperatura en Celcius es: " + tempC);
 		console.log("La temperatura en Fahrenheit es: "	+ tempF);
-		$('.climate').text(tempC);
+		$('.climate').text(tempC+' °C');
     $('.yourTime').text(dateComplete);
     $('.climResume').text(climateResume);
     $('.climDescription').text(climateDescription);
     $('.yourLocation').text(yourLocation);
     $('body').addClass(landscape+'-'+timeLight);
-    $('#icon').prepend('<img src="http://theviajerock.tk/img/broken-clouds-night-icon.png">');
+    $('#icon').prepend('<img src="http://theviajerock.tk/img/'+landscape+'-'+timeLight+'-icon.png">');
+                        
     console.log('<img src="http://theviajerock.tk/img/'+landscape+'-'+timeLight+'-icon.png"')
     
      });
@@ -73,3 +81,26 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 
 weather();
 
+$('#buttonChange').click(function(){
+
+    if ($('#buttonChange').text() == "°C" ){
+      
+        $('.climate').text(tempF + ' °F');
+        $('#buttonChange').text('°F');
+    }      
+      else if ($('#buttonChange').text() == '°F' ) {
+      $('.climate').text(tempC + ' °C');
+      $('#buttonChange').text('°C');
+
+    }
+
+  }
+    
+
+
+
+  
+
+  );
+
+});

@@ -202,5 +202,21 @@
   background-color: #464646;
 }
 
-
 .center-this{width: 50%; margin: 0 auto;}
+body{
+font-family: 'Bree Serif', serif;
+  color: white;
+  font-size: 220%;
+  ; 
+}
+.inline1{
+  display:inline-block;
+  
+}
+
+.inline2{
+  display:inline-block;
+  width: 15%;
+
+
+}
