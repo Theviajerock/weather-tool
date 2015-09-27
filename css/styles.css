@@ -43,6 +43,47 @@
 }
 
 
+.haze-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/12017727_1024180984300959_3281887302522606965_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  
+  
+}
+
+.haze-night{
+  background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xat1/t31.0-8/12030367_1024181540967570_1151310321170266865_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  
+  
+}
+
+.clear-day{
+  background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/12017583_1024112500974474_370167076934926588_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.clear-night{
+  background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xta1/t31.0-8/12029615_1024112644307793_3155920974076445175_o.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
 .few-clouds-day{
   background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12045262_1024112620974462_7780137058876176689_o.jpg');
   background-position: center center;
