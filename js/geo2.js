@@ -46,7 +46,10 @@ function success(pos) {
     var dateMinutes = new Date(response.dt * 1000).getMinutes();
     var dateComplete = date+':'+dateMinutes;
     var yourLocation = response.name;
-
+   
+    var iconWeather = response.weather[0].icon;
+  
+    
     $('#icon').prepend('<img src="http://openweathermap.org/img/w/'+iconWeather+'.png">');
              
    
